@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meza Mobile App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar (visible after login) -->
+    <nav id="nav-bar">
+        <a href="#upload">Upload</a>
+        <!-- <a href="#device-info">Device Info</a> -->
+        <a href="#logout" id="logout-link">Logout</a>
+    </nav>
+    
+    <!-- Page Container -->
+    <div id="page-container" class="container">
+        
+        <!-- Login Page -->
+        <div id="login" class="page">
+            <h2 style="margin-bottom: 20px;">Login</h2>
+            <input type="text" id="server-input" placeholder="Server URL (https://example.com)">
+            <input type="text" id="email-input" placeholder="Email">
+            <input type="password" id="password-input" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="error-message"></p>
+        </div>
+        
+        <!-- Upload Page -->
+        <div id="upload" class="page">
+            <!-- <h2>Upload</h2> -->  
+            
+            <!-- Upload Buttons -->
+            <div>
+                <button id="take-picture-btn">Take a Picture</button>
+                <button id="upload-pictures-btn">Upload Pictures</button>
+            </div>
+            
+            <!-- List of Uploaded Pictures -->
+            <p id="unsent-image-count"></p>
+            
+        </div>
+        
+        <!-- Device Info Page -->
+        <div id="device-info" class="page">
+            <h2>Device Info</h2>
+            <p>Device information is shown here.</p>
+            <!-- Additional device info UI elements go here -->
+        </div>
+        
+    </div>
+    
+    <!-- Link to our app logic -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

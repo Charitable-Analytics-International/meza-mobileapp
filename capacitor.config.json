@@ -1,0 +1,6 @@
+{
+    "appId": "com.charitableanalytics.mezamobileapp",
+    "appName": "Meza",
+    "webDir": "dist",
+    "bundledWebRuntime": false
+}

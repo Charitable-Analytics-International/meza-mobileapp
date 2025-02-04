@@ -1,0 +1,96 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    padding: 1.5em;
+    background: #fff;
+}
+
+/* Page Setup */
+.page {
+    display: none; /* Hidden by default; will be displayed via JS */
+    padding-top: 70px;  /* Leave space for fixed nav bar */
+    min-height: calc(100vh - 70px);
+}
+
+/* Fixed Navigation Bar */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: #0b75c1;
+    color: #fff;
+    font-size: 16px;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2em 0em;
+    text-align: center;
+}
+
+#nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+/* Form and Input Styling */
+input, button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+button {
+    background: #0b75c1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Error Message Styling */
+#error-message {
+    color: #d32f2f;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#unsent-image-count {
+    display: none;
+    color: #d32f2f;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
